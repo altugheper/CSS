@@ -1,0 +1,15 @@
+nav.menu li{
+    color: navy;
+}
+
+nav.menu > ul > li{
+    color: green;
+}
+
+nav.menu ul ul > li{
+    color: chartreuse;
+}
+
+nav.menu ul ul > li:last-child{
+    color: black;
+}
