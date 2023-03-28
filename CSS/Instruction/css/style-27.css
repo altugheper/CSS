@@ -6,3 +6,10 @@
     background-color: black;
     color: white;
 }
+
+.btn-mode{
+    background-color: aqua;
+    padding: 15px 20px;
+    display: inline-block;
+    cursor: pointer;
+}
