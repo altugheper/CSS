@@ -2,7 +2,9 @@
     --color1: red;
     --color2: blue;
     --color3: white;
+
 }
+
 
 nav.menu{
     background-color: var(--color1);
@@ -11,8 +13,8 @@ nav.menu{
 
 nav.menu ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin:0;
+    padding:0;
 }
 
 nav.menu li{
@@ -20,7 +22,7 @@ nav.menu li{
 }
 
 nav.menu li::after{
-    content: " | ";
+    content:"|";
     color: var(--color2);
 }
 
@@ -39,3 +41,4 @@ nav.menu a{
     padding: 5px 10px;
     color: var(--color3);
 }
+
