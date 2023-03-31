@@ -1,8 +1,12 @@
 .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap:5px;
+    height: 50vh;
 }
 
 
@@ -10,17 +14,15 @@
 
 .container div:nth-child(1){
     background-color: aqua;
-    flex:0 1 200px;
+    flex:1 0 200px;
 }
 
 .container div:nth-child(2){
     background-color:crimson;
-    flex:1 0 50px;
 }
 
 .container div:nth-child(3){
     background-color: chartreuse;
-    flex:5 0 250px;
 }
 
 .container div:nth-child(4){

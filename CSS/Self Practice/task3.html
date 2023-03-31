@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="assets/css/style3.css">
+    <title>Task 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+    .menu{
+    display: inline-block;
+    background-color: rgb(223, 220, 220);
+    }
+
+    .content{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 10px;
+    display: none;
+    }
+
+    .menu:hover .content{
+        display: block;
+    }
+
+    .content a{
+    display: block;
+    background-color: rgb(185, 182, 182);
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+    }
+
+    .button:hover{
+        background-color: black;
+        color: white;
+    }
+
+    .content a:hover{
+    display: block;
+    background-color: black;
+    }
+
+    </style>
 </head>
 <body>
-   
+    
+    <div class="menu">
+        <button class="button"><i class="fas fa-bars"></i></button>
+        <div class="content">
+            <a href="#">Ana Sayfa</a>
+            <a href="#">Urunler</a>
+            <a href="#">Blog</a>
+            <a href="#">Iletisim</a>
+        </div>
+    </div>
 </body>
 </html>
