@@ -6,76 +6,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 4</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .table{
+            font-size: large;
+        }
+
+        .table tr:nth-child(odd){
+            background-color: azure;
+        }
+
+        .table tr:nth-child(even){
+            background-color: rgb(180, 177, 177);
+        }
+
+        .table tr:nth-child(7n+1){
+            background-color: rgb(70, 61, 61);
+            color: white;
+        }
+
+        .table th:nth-child(2){
+            text-align: left;
+        }
+
+        .table th:nth-child(5){
+            text-align: end;
+        }
+
+        .table th:nth-child(4){
+            text-align: end;
+        }
+
+        .toplam{
+            text-align: end;
+            padding-right: 10px;
+        }
+
+        .foot{
+            height: 30px;
+        }
+
+        .head{
+            height: 30px;
+        }
+
+        .fa-solid{
+            color: black;
+        }
+
+        .fa-pen-to-square:hover{
+            color: white;
+        }
+
+        .fa-trash:hover{
+            color: white;
+        }
+
+        div.buttons ul{
+            list-style-type: none;
+            margin: 20px;
+            padding-left: 10%;
+        }
+
+        div.buttons li{
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        div.buttons li a{
+            display: inline-block;
+            background-color: orange;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: white;
+        }
+
+        div.buttons li a:hover{
+            background-color: rgb(202, 90, 15);
+        }
+
+    </style>
 </head>
 <body>
-   <table border="1">
-
-    <thead>
-        <tr>
-            <th>Urun Kodu</th>
-            <th colspan="7">Urun Adi</th>
-            <th>Miktar</th>
-            <th>Birim Fiyat</th>
-            <th>Ara Toplam</th>
-            <th></th>
-        </tr>
-    </thead>
+   <table class="table" border="0" style="width: 30%;">
 
     <tbody>
+        <tr class="head">
+            <th>Urun <br> Kodu</th>
+            <th colspan="3">Urun Adi</th>
+            <th>Miktar</th>
+            <th>Birim <br> Fiyat</th>
+            <th>Ara <br> Toplam</th>
+            <th></th>
+        </tr>
         <tr>
             <th>154654</th>
-            <th colspan="7">Notebook</th>
+            <th colspan="3">Notebook</th>
             <th>1</th>
             <th>5400 ₺</th>
             <th>5400 ₺</th>
-            <th></th>
+            <th><a href="#"><i class="fa-solid fa-pen-to-square"></i></a> &nbsp; <a href="#"><i class="fa-solid fa-trash"></i></a></th>
         </tr>
         <tr>
             <th>456466</th>
-            <th colspan="7">Klavye</th>
+            <th colspan="3">Klavye</th>
             <th>2</th>
             <th>80 ₺</th>
             <th>160 ₺</th>
-            <th></th>
+            <th><a href="#"><i class="fa-solid fa-pen-to-square"></i></a> &nbsp; <a href="#"><i class="fa-solid fa-trash"></i></a></th>
         </tr>
         <tr>
             <th>564646</th>
-            <th colspan="7">Monitor</th>
+            <th colspan="3">Monitor</th>
             <th>1</th>
             <th>700 ₺</th>
             <th>700 ₺</th>
-            <th></th>
+            <th><a href="#"><i class="fa-solid fa-pen-to-square"></i></a> &nbsp; <a href="#"><i class="fa-solid fa-trash"></i></a></th>
         </tr>
         <tr>
             <th>123598</th>
-            <th colspan="7">Mouse</th>
+            <th colspan="3">Mouse</th>
             <th>2</th>
             <th>50 ₺</th>
             <th>100 ₺</th>
-            <th></th>
+            <th><a href="#"><i class="fa-solid fa-pen-to-square"></i></a> &nbsp; <a href="#"><i class="fa-solid fa-trash"></i></a></th>
         </tr>
         <tr>
             <th>613448</th>
-            <th colspan="7">Playstation</th>
+            <th colspan="3">Playstation</th>
             <th>1</th>
             <th>2500 ₺</th>
             <th>2500 ₺</th>
-            <th></th>
+            <th><a href="#"><i class="fa-solid fa-pen-to-square"></i></a> &nbsp; <a href="#"><i class="fa-solid fa-trash"></i></a></th>
         </tr>
         <tr>
             <th>789799</th>
-            <th colspan="7">USB Bellek</th>
+            <th colspan="3">USB Bellek</th>
             <th>3</th>
             <th>120 ₺</th>
             <th>360 ₺</th>
-            <th></th>
+            <th><a href="#"><i class="fa-solid fa-pen-to-square"></i></a> &nbsp; <a href="#"><i class="fa-solid fa-trash"></i></a></th>
         </tr>
-        <tr>
-            <th></th>
-            <th></th>
+        <tr class="foot">
+            <th class="toplam" colspan="6">Toplam</th>
+            <th class="footsecondchild">9220 ₺</th>
             <th></th>
         </tr>
     </tbody>
    </table>
+
+   <div class="buttons">
+    <ul>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping"></i> &nbsp; Alisverise Devam</a></li>
+        <li><a href="#"><i class="fa-solid fa-credit-card"></i> &nbsp; Odemeye Gec</a></li>
+    </ul>
+   </div>
 </body>
 </html>
