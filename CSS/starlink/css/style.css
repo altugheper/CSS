@@ -1,0 +1,10 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section.banner{
+    height: 100vh;
+    background-image: url("../img/Marketing_LandingFeatured_Redesign.webp");
+}
