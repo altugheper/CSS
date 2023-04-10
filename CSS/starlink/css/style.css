@@ -110,11 +110,6 @@ body{
     font-weight: 700;
 }
 
-.banner .navbar .second-nav li:last-child a{
-    font-size: 1.6rem;
-}
-
-
 /* SIDE MENU */
 
 nav.side-menu{
@@ -138,12 +133,20 @@ nav.side-menu{
     -ms-transition: transform 0.5s;
     -o-transition: transform 0.5s;
     z-index: 99;
+    overflow: scroll;
 }
 
 @media screen and (min-width:600px) {
     nav.side-menu{
         left:auto;
         width:200px;
+    }
+}
+
+@media screen and (min-width:1280x) {
+    nav.side-menu .menu2,
+    nav.side-menu .menu3{
+        display: none;
     }
 }
 
@@ -170,6 +173,15 @@ nav.side-menu ul.menu1 i{
 
 nav.side-menu > label{
     font-size: 1.5rem;
+}
+
+.side-menu-icon{
+    position: absolute;
+    right: 30px;
+    top: 32px;
+    z-index: 5;
+    font-size: 1.6rem;
+    color: white;
 }
 
 .chkMenu{
@@ -231,11 +243,67 @@ label[for="chkMenu"]{
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     text-align: center;
-    
+    width: 90%;
+}
+
+@media screen and (min-width: 700px){
+    .banner .order-form{
+        width: 600px;
+    }
 }
 
 
 .banner .order-form form{
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (min-width: 960px){
+    .banner .order-form form{
+        flex-direction: row;
+    }
+}
+
+.banner .order-form input{
+    background-color: rgba(255, 255, 255, 0.228);
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid white;
+    font-size: 0.8rem;
+    flex: 5;
+}
+
+.banner .order-form button{
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    flex: 2;
+}
+
+.banner .order-form .map a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.banner .order-form .privacy{
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.banner .order-form .privacy a{
+    color: rgba(255, 255, 255, 0.548);
 }
