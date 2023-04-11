@@ -1,7 +1,21 @@
+/*
+1. COMMON
+2. BANNER
+
+
+
+*/
+
+
+
+
+
 body{
     font-family: 'Roboto', sans-serif;
     margin:0;
     padding:0;
+    background-color: black;
+    color: white;
 }
 
 
@@ -70,24 +84,14 @@ body{
     }
 }
 
+.banner .navbar .second-nav,
 .banner .navbar .first-nav{
     display:none;
 }
 
 @media screen and (min-width:1280px) {
+    .banner .navbar .second-nav,
     .banner .navbar .first-nav{
-        display:block;
-    }
-}
-
-.banner .navbar .second-nav li:nth-child(1),
-.banner .navbar .second-nav li:nth-child(2){
-    display:none;
-}
-
-@media screen and (min-width:1280px) {
-    .banner .navbar .second-nav li:nth-child(1),
-    .banner .navbar .second-nav li:nth-child(2){
         display:block;
     }
 }
@@ -109,6 +113,7 @@ body{
     font-size: 0.9rem;
     font-weight: 700;
 }
+
 
 /* SIDE MENU */
 
@@ -133,7 +138,7 @@ nav.side-menu{
     -ms-transition: transform 0.5s;
     -o-transition: transform 0.5s;
     z-index: 99;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 @media screen and (min-width:600px) {
@@ -143,12 +148,16 @@ nav.side-menu{
     }
 }
 
-@media screen and (min-width:1280x) {
+
+@media screen and (min-width:1280px) {
     nav.side-menu .menu2,
     nav.side-menu .menu3{
         display: none;
     }
 }
+
+
+
 
 
 nav.side-menu ul{
@@ -177,11 +186,11 @@ nav.side-menu > label{
 
 .side-menu-icon{
     position: absolute;
-    right: 30px;
-    top: 32px;
+    right:30px;
+    top:32px;
     z-index: 5;
     font-size: 1.6rem;
-    color: white;
+    color :white;
 }
 
 .chkMenu{
@@ -243,12 +252,16 @@ label[for="chkMenu"]{
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     text-align: center;
-    width: 90%;
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
 }
 
-@media screen and (min-width: 700px){
+
+@media screen and (min-width: 700px) {
     .banner .order-form{
-        width: 600px;
+        width:600px;
     }
 }
 
@@ -256,24 +269,25 @@ label[for="chkMenu"]{
 .banner .order-form form{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap:20px;
 }
 
-@media screen and (min-width: 960px){
+@media screen and (min-width: 960px) {
     .banner .order-form form{
         flex-direction: row;
     }
 }
 
+
 .banner .order-form input{
     background-color: rgba(255, 255, 255, 0.228);
-    padding: 15px;
+    padding:15px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    border: 1px solid white;
+    border:1px solid white;
     font-size: 0.8rem;
     flex: 5;
 }
@@ -286,10 +300,10 @@ label[for="chkMenu"]{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    border: 1px solid white;
+    border:1px solid white;
     font-size: 0.8rem;
     font-weight: 700;
-    flex: 2;
+    flex:2;
 }
 
 .banner .order-form .map a{
@@ -305,5 +319,36 @@ label[for="chkMenu"]{
 }
 
 .banner .order-form .privacy a{
-    color: rgba(255, 255, 255, 0.548);
+    color: rgb(166, 166, 166);
+}
+
+.banner .order-form .scroll i{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+/* MAIN */
+
+main > section {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+    main > section {
+        flex-direction: row;
+    }
+}
+
+
+main > section > div{
+    flex:1 0 50%;
+}
+
+main img{
+    object-fit: cover;
+    width:100%;
+    height: 70%;
 }
